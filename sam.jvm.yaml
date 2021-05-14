@@ -15,7 +15,9 @@
         Runtime: java11
         CodeUri: target/function.zip
         MemorySize: 512
-        Policies: AWSLambdaBasicExecutionRole
+        Policies: 
+          - AWSLambdaBasicExecutionRole
+          - SNSPublishMessagePolicy
         Timeout: 15
         Environment:
           Variables:
