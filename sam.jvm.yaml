@@ -17,7 +17,9 @@
         MemorySize: 512
         Policies: 
           - AWSLambdaBasicExecutionRole
-          - AmazonSNSFullAccess
+          - SNSPublishMessagePolicy:
+              TopicName:
+                !GetAtt MailTopic.TopicName
         Timeout: 15
         Environment:
           Variables:
