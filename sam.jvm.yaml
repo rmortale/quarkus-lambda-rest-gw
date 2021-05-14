@@ -30,7 +30,7 @@
     MailTopic:
       Type: AWS::SNS::Topic
       Properties: 
-      TopicName: email-topic
+        TopicName: email-topic
 
   Outputs:
     QuarkusLambdaRestGwApi:
