@@ -17,7 +17,7 @@
         MemorySize: 512
         Policies: 
           - AWSLambdaBasicExecutionRole
-          - SNSPublishMessagePolicy
+          - AmazonSNSFullAccess
         Timeout: 15
         Environment:
           Variables:
