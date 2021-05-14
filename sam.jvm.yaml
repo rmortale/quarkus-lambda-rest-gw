@@ -19,7 +19,7 @@
         Timeout: 15
         Environment:
           Variables:
-            topic.arn: !Ref MailTopic
+            topicArn: !Ref MailTopic
         Events:
           GetResource:
             Type: Api

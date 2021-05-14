@@ -12,7 +12,7 @@ public class GreetingFunction {
     @Inject
     SnsClient sns;
     
-    @ConfigProperty(name = "topic.arn")
+    @ConfigProperty(name = "topicArn")
     String topicArn;
     
     @Funq
